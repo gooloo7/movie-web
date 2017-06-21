@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	background-color: #EFF0F4;
+}
+
+#nav {
+	height: 100px;
+	padding: 1px;
+	background-color: #C0C2C7;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	display: inline-block;
+	float: left;
+	
+}
+
+#nav ul li a {
+	color: #EFEFEF;
+	font-family: Lato;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+#header h1 {
+	text-align: center;
+	color: #636363;
+	font-family: Oswald;
+	font-size: 50px;
+}
+
+
+
+
+/*Bilder richtig anordenen (overlay drüber machen und text reinschreiben)!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix {
+	clear: both;
+}
