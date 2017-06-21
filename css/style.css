@@ -57,7 +57,7 @@ body {
 
 .film img {
     width: 100%;
-    height: auto;
+    height: 450px;
     float: left;
     
     opacity: 0.65;
@@ -159,7 +159,7 @@ body {
 }
 
 #actors {
-    width: 35%;
+    width: 37%;
     height: auto;
     margin-left: 35%;
     margin-top: 1%;
