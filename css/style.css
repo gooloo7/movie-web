@@ -7,6 +7,8 @@ body {
 	height: 100px;
 	padding: 1px;
 	background-color: #C0C2C7;
+
+	animation: fadeInDown 1s;
 }
 
 #nav ul {
@@ -18,7 +20,14 @@ body {
 	float: left;
 	padding-left: 35px;
     padding-top: 20px;
+
+    transform: scale(1);
+    transition: transform 0.5s;
     
+}
+
+#nav ul li:hover {
+	transform: scale(1.2);
 }
 
 #nav ul li a {
@@ -30,7 +39,9 @@ body {
 
 #nav ul li a:hover {
     color: white;
-    text-decoration: underline;
+}
+
+#header {
 }
 
 #header h1 {
@@ -38,10 +49,14 @@ body {
 	color: #636363;
 	font-family: Oswald;
 	font-size: 50px;
+
+	animation-duration: 1.5s;
 }
 
 #slider {
     position: relative;
+
+    animation-duration: 2s;
 }
 
 .film {
@@ -57,7 +72,7 @@ body {
 
 .film img {
     width: 100%;
-    height: 450px;
+    height: 550px;
     float: left;
     
     opacity: 0.65;
@@ -84,6 +99,8 @@ body {
 .poster {
     width: 25%;
     
+    animation: fadeInUpBig 1s;
+    
 }
 
 .poster img {
@@ -100,6 +117,8 @@ body {
     margin-left: 35%;
     border: 1px solid transparent;
     
+    animation: fadeInDown 1s;
+    
 }
 
 #headline h1{
@@ -112,6 +131,8 @@ body {
     width: 30%;
     height: 40px;
     margin-left: 40%;
+    
+    animation: fadeInRight 1s;
 }
 
 #genre img {
@@ -134,19 +155,27 @@ body {
     height: auto;
     margin-left: 35%;
     margin-top: 2%;
+    
+    padding: 10px;
+    
+    
 }
 
 #description p {
     color: #272727;
     font-family: Lato;
     font-size: 1em;
+    
+    animation: fadeIn 3s;
 }
 
 #images {
-    width: 900px;
+    width: 850px;
     height: auto;
     margin-left: 35%;
     margin-top: 5%;
+    
+    animation: fadeInUp 1s;
     
 }
 
@@ -163,54 +192,81 @@ body {
     height: auto;
     margin-left: 35%;
     margin-top: 1%;
+    
 }
 
 #actors p {
     color: #95989A;
     font-size: 10px;
     font-family: Lato;
-}
-
-#button {
-    position: absolute;
-    width: 10%;
-    height: auto;
-    margin-left: 77.5%;
-    top: 40%;
-}
-
-#button a {
-    text-decoration: none;
     
+    animation: fadeIn 3s;
+}
+
+.button {
+	position: absolute;
+	width: 10%;
+	height: auto;
+	margin-left: 77.5%;
+    
+    animation: fadeInRight 1s;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button a {
+	text-decoration: none;
+	border-radius: 8px;
+	color: #FFF;
+	font-family: Oswald;
+	text-align: center;
+	position: absolute;
+}
+
+.trailer-opacity {
+    opacity: 0;
+}
+
+.video-opacity {
+    opacity: 1;
+}
+
+#trailer-button {
+    top: 40%;
+    
+    -webkit-transition = opacity 1s;
+    opacity: 1;
+}
+
+#trailer-button a { 
     background-color: #415F9D;
     padding: 10px 55px 10px 55px;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: Oswald;
-    text-align: center;
-    
-    position: absolute;
-    
 }
 
-#button2 {
+#youtube-video {
+    border: 1px solid;
+    width: 500px;
+    height: 250px;
+    margin-left: 70.5%;
     position: absolute;
-    width: 10%;
-    height: auto;
-    margin-left: 77.5%;
+    top: 30%;
+    
+    -webkit-transition = opacity: 1s;
+    
+    opacity: 0;
+}
+
+
+
+#netflix {
     top: 50%;
 }
 
-#button2 a {
-    text-decoration: none;
+#netflix a {
     background-color: #233B6E;
     padding: 15px 33px 15px 33px;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: Oswald;
-    text-align: center;
-    
-    position: absolute;
     
     font-size: 10px;
     
